@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filesystemIterator all files 1`] = `
+Array [
+  "file.txt",
+  "nested/file2.txt",
+  "nested/even/file3.txt",
+  "nested/even/more/file4.txt",
+  "nested/even/more",
+  "nested/even",
+  "nested",
+]
+`;
+
+exports[`filesystemIterator max depth 1`] = `
+Array [
+  "file.txt",
+  "nested/file2.txt",
+  "nested/even",
+  "nested",
+]
+`;
+
+exports[`filesystemIterator skipping directories 1`] = `
+Array [
+  "file.txt",
+  "nested/file2.txt",
+  "nested/even/file3.txt",
+  "nested/even/more/file4.txt",
+]
+`;
+
+exports[`filesystemIterator using filter 1`] = `
+Array [
+  "nested/even/more/file4.txt",
+  "nested/even/more",
+]
+`;
+
+exports[`filesystemIterator using filter with skipping directories 1`] = `
+Array [
+  "nested/even/more/file4.txt",
+]
+`;

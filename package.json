@@ -1,0 +1,30 @@
+{
+  "name": "@pallad/filesystem-iterator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compiled/index.js",
+  "types": "compiled/index.d.ts",
+  "scripts": {
+    "test": "pallad-scripts test",
+    "compile": "pallad-scripts compile",
+    "lint": "pallad-scripts lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallad-ts/filesystem-iterator.git"
+  },
+  "files": [
+    "compiled"
+  ],
+  "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com> (http://wookieb.pl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallad-ts/filesystem-iterator/issues"
+  },
+  "homepage": "https://github.com/pallad-ts/filesystem-iterator#readme",
+  "devDependencies": {
+    "@pallad/scripts": "^1.1.4",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^13.13.2"
+  }
+}
