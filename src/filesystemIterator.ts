@@ -13,6 +13,7 @@ export function filesystemIterator(dir: string, options?: filesystemIterator.Opt
         while (true) {
             const entry = await handle.read();
             if (entry === null) {
+                await handle.close();
                 return;
             }
 
@@ -31,6 +32,7 @@ export function filesystemIterator(dir: string, options?: filesystemIterator.Opt
             }
             yield currentPath;
         }
+
     };
 
     return iterator(dir, 0);
