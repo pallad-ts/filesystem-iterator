@@ -18,13 +18,16 @@
   ],
   "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com> (http://wookieb.pl)",
   "license": "MIT",
+  "peerDependencies": {
+    "tslib": "*"
+  },
   "bugs": {
     "url": "https://github.com/pallad-ts/filesystem-iterator/issues"
   },
   "homepage": "https://github.com/pallad-ts/filesystem-iterator#readme",
   "devDependencies": {
-    "@pallad/scripts": "^1.1.4",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^13.13.2"
+    "@pallad/scripts": "^2.0.0-alpha.5",
+    "@types/jest": "^26",
+    "@types/node": "^14"
   }
 }

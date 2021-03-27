@@ -12,6 +12,7 @@ export function filesystemIterator(dir: string, options?: filesystemIterator.Opt
         const handle = await fs.promises.opendir(dir);
         while (true) {
             const entry = await handle.read();
+            // eslint-disable-next-line no-null/no-null
             if (entry === null) {
                 await handle.close();
                 return;
